@@ -27,12 +27,78 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w-100 {
+  width: 100%;
+}
+.calculatorSection {
+  height: 100vh;
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttonsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.calculatorWrapper {
+  background-color: #545b57fc;
+  padding: 20px;
+  border-radius: 5px;
+}
+.inputClass:focus {
+  outline: 0;
+}
+.inputClass {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #3b4741fc;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 50px;
+  outline: 0;
+}
+.clearButton {
+  background-color: #f10d4fde;
+}
+.clearButton:hover {
+  background-color: #ff004a;
+}
+.deleteButton {
+  background-color: #ff0000d4;
+}
+.deleteButton:hover {
+  background-color: #ff0000;
+}
+button {
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  padding: 20px;
+  height: 100%;
+  transition: all 0.3s;
+}
+.commonButton {
+  background-color: rgb(37 37 43 / 73%);
+}
+.commonButton:hover {
+  background-color: rgb(37 37 43);
+}
+.equalButton {
+  grid-column: 3 /5;
+  background-color: #08d908c4;
+}
+.equalButton:hover {
+  background-color: #08d908;
 }
